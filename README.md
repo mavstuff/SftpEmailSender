@@ -6,12 +6,12 @@ This is a C# .NET 6.0. application that downloads new files from an SFTP server,
 
 Replace the placeholder values for SFTP and email settings with your own credentials:
 
-**SFTP server credentials and path**
-string sftpHost = "your_sftp_host";
-int sftpPort = 22; // Default SFTP port
-string sftpUser = "your_sftp_login";
-string sftpPass = "your_sftp_password";
-string sftpRemotePath = "/";
+**SFTP server credentials and path**<br/>
+string sftpHost = "your_sftp_host";<br/>
+int sftpPort = 22; // Default SFTP port<br/>
+string sftpUser = "your_sftp_login";<br/>
+string sftpPass = "your_sftp_password";<br/>
+string sftpRemotePath = "/";<br/><br/>
 
 
 **Email credentials and settings**<br/>
