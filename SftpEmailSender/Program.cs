@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* 
+ * SftpEmailSender is an app that downloads files from SFTP server and sends them to email
+ * 
+ * (c) 2023 Artem Moroz, artem.moroz@gmail.com
+ */
+
+using System;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
@@ -34,9 +40,10 @@ namespace SftpEmailSender
 
             // Path to sent files tracking file
             string sentFilesPath = "_sent.txt";
+            //Path to cache files
             string localFolderPath = "C:\\sftp-cache";
 
-
+            //Email subject
             string emailSubject = string.Format("Files {0:dd-MMM-yyyy}", DateTime.Now);
 
             // Load the list of sent files
