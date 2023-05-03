@@ -14,23 +14,23 @@ string sftpPass = "your_sftp_password";
 string sftpRemotePath = "/";
 
 
-**Email credentials and settings**
-string smtpHost = "your_smtp_server";
-int smtpPort = 587; // Default SMTP port
-string smtpUser = "your_email_address";
-string smtpPass = "your_email_password";
-string fromEmail = "your_email_address";
-string[] toEmails = new string[] { "to_email@address_1", "to_email@address_2" };
+**Email credentials and settings**<br/>
+string smtpHost = "your_smtp_server";<br/>
+int smtpPort = 587; // Default SMTP port<br/>
+string smtpUser = "your_email_address";<br/>
+string smtpPass = "your_email_password";<br/>
+string fromEmail = "your_email_address";<br/>
+string[] toEmails = new string[] { "to_email@address_1", "to_email@address_2" };<br/>
+<br/>
 
+**Path to sent files tracking file**<br/>
+string sentFilesPath = "_sent.txt";<br/>
 
-**Path to sent files tracking file**
-string sentFilesPath = "_sent.txt";
+**Path to cache files**<br/>
+string localFolderPath = "C:\\sftp-cache";<br/>
 
-**Path to cache files**
-string localFolderPath = "C:\\sftp-cache";
-
-**You can also modify Email subject**
-string emailSubject = string.Format("Files {0:dd-MMM-yyyy}", DateTime.Now);
+**You can also modify Email subject**<br/>
+string emailSubject = string.Format("Files {0:dd-MMM-yyyy}", DateTime.Now);<br/>
 
 To run the application on a schedule, you can use the Windows Task Scheduler or another scheduling tool to execute the compiled application at specific intervals.
 
